@@ -1,6 +1,43 @@
 {
-  "name": "sitemap",
-  "version": "1.0.0",
+  "name": "@swimmy/sitemap",
+  "version": "0.1.1",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {},
+  "files": [
+    "src/**/*"
+  ],
+  "dependencies": {
+    "@types/jsdom": "^12.2.3",
+    "jsdom": "^13.2.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.11",
+    "husky": "^1.2.0",
+    "jest": "^24.3.1",
+    "prettier": "^1.14.3",
+    "pretty-quick": "^1.8.0",
+    "ts-jest": "^24.0.0",
+    "typescript": "^3.3.3333"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "ts"
+    ],
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "testMatch": [
+      "**/__tests__/*.+ts"
+    ]
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }
