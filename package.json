@@ -1,11 +1,13 @@
 {
   "name": "@swimmy/sitemap",
-  "version": "0.1.1",
-  "main": "index.js",
+  "version": "0.1.4",
+  "main": "lib/index.js",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "build": "tsc"
+  },
   "files": [
-    "src/**/*"
+    "lib/**/*"
   ],
   "dependencies": {
     "@types/jsdom": "^12.2.3",
@@ -39,5 +41,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "types": "lib/index.d.ts"
 }
